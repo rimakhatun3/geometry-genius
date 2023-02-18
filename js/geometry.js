@@ -4,7 +4,12 @@ function getInputById(id){
     const triangleInput = parseFloat(triangleInputSting);
    triangleInputElement.value = '';
    return triangleInput;
+  
 }
+
+document.getElementById('nav-btn').addEventListener('click',function(){
+    window.location.href ='page.html'
+})
 
 
 let serial = 0;
@@ -14,6 +19,8 @@ document.getElementById('btn-triangle').addEventListener('click',function(){
     const firstTriangleInput = getInputById('first-input-triangle');
     const sceondTriangleInput = getInputById('sceond-input-triangle');
     const total =  0.5*firstTriangleInput * sceondTriangleInput;
+    const triangleBody = document.getElementById('triangle-body');
+    triangleBody.style.backgroundColor = ' #faf55' + 'randomColor'
    getData(triangle,total);
   
 
@@ -60,6 +67,17 @@ document.getElementById('btn-pentagon').addEventListener('click',function(){
     const total =  0.5*firstPentagonInput* sceondPentagonInput;
 
    getData(pentagonText,total);
+  
+})
+document.getElementById('btn-ellipse').addEventListener('click',function(){
+    serial += 1
+    const ellipseText = document.getElementById('ellipse-text').innerText;
+    const firstEllipseInput = getInputById('first-ellipse-input');
+    const sceondEllipseInput = getInputById('sceon-ellipse-input');
+    const total =  3.14*firstEllipseInput* sceondEllipseInput;
+
+   getData(ellipseText,parseFloat(total.toFixed(2)));
+   console.log(typeof total);
   
 })
 

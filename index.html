@@ -48,18 +48,18 @@
         </div>
 
         <div class="navbar-end">
-          <a class="btn bg-blue-600 px-10 hover:bg-green-400">Blog</a>
+          <a id="nav-btn" class="btn bg-blue-600 px-10 hover:bg-green-400">Blog</a>
         </div>
       </div>
     </nav>
     <main>
       <section class="flex md:flex-row lg:flex-row lg:px-12 ">
         <div class="products-details w-full md:w-[70%] lg:w-[70%] grid md:grid-cols-2 lg:grid-cols-3 gap-3 mt-5 ">
-          <div class="card w-full bg-base-100 border shadow-xl">
+          <div id="triangle-body" class="card w-full bg-base-100 border shadow-xl">
             <figure class="px-10 pt-10">
               <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
             </figure>
-            <div class="card-body items-center text-center">
+            <div  class="card-body items-center text-center">
               <h2 id="triangle" class="card-title">Triangle</h2>
               <p>Area(A)=<span id="triangle-total">0.5*b*h</span></p>
               <div class="form-control">
@@ -86,7 +86,7 @@
             </figure>
             <div class="card-body items-center text-center">
               <h2 id="rectangle-text" class="card-title">Rectangle</h2>
-              <p>Area(A)=<span id="triangle-total">w*l</span></p>
+              <p>Area(A)=<span id="triangle-total">wl</span></p>
               <div class="form-control">
                 <label class="input-group">
                   <input id="sceond-rectangle-input" type="text" placeholder="w"
@@ -133,7 +133,7 @@
                 <label class="input-group">
                   <input id="first-rhombus-input" type="text" placeholder="d1=16" class=" px-3  w-20" />
                   <span class="bg-white">cm</span>
-                  <input id="sceond-rhombus-input" type="text" placeholder="d2=8" class=" px-3  w-20" />
+                  <input id="sceond-rhombus-input" type="text" placeholder="d  =8" class=" px-3  w-20" />
                   <span class="bg-white">cm</span>
                 </label>
               </div>
@@ -168,7 +168,7 @@
             </figure>
             <div class="card-body items-center text-center">
               <h2 id="ellipse-text" class="card-title">Ellipse</h2>
-              <p>Area(A)=<span id="triangle-total">3.14ab</span></p>
+              <p>Area(A)=<span id="triangle-total"><span>&pi;</span>ab</span></p>
               <div class="form-control">
                 <label class="input-group">
                   <input id="first-ellipse-input" type="text" placeholder="a=10" class=" px-3  w-20" />
@@ -178,7 +178,7 @@
                 </label>
               </div>
               <div class="card-actions">
-                <button class="btn btn-primary px-20 mt-20">Buy Now</button>
+                <button id="btn-ellipse" class="btn btn-primary px-20 mt-20">Buy Now</button>
               </div>
             </div>
           </div>
