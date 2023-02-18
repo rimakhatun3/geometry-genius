@@ -1,9 +1,20 @@
 function getInputById(id){
-    const triangleInputElement = document.getElementById(id);
-    const triangleInputSting = triangleInputElement.value;
-    const triangleInput = parseFloat(triangleInputSting);
-   triangleInputElement.value = '';
-   return triangleInput;
+    const inputElement = document.getElementById(id);
+    const inputSting = inputElement.value;
+    const inputValue = parseFloat(inputSting);
+   inputElement.value = '';
+
+
+   if(inputSting==null || inputSting==''){
+    alert('input fileld mustbe filled out')
+    return false
+   }
+
+   if(isNaN(inputSting)){
+    alert('please type a number')
+    return false
+   }
+   return inputValue;
   
 }
 
