@@ -55,130 +55,142 @@
     <main>
       <section class="flex flex-col  md:flex-row lg:flex-row lg:px-12 ">
         <div class="products-details w-full md:w-[70%] lg:w-[70%] grid md:grid-cols-2 lg:grid-cols-3 gap-3 mt-5 ">
-          <div id="triangle-body" class="card w-full bg-base-100 border shadow-xl">
-            <figure class="px-10 pt-10">
-              <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
-            </figure>
-            <div  class="card-body items-center text-center">
-              <h2 id="triangle" class="card-title">Triangle</h2>
-              <p>Area(A)=<span id="triangle-total">0.5*b*h</span></p>
-              <div class="form-control">
-                <label class="input-group">
-                  <input id="first-input-triangle" type="text" placeholder="b"
-                    class="border rounded px-3 bg-gray-200 w-20">
-                  <span class="bg-white">cm</span>
-                  <input id="sceond-input-triangle" type="text" placeholder="h"
-                    class="border rounded px-3 bg-gray-200 w-20">
-                  <span class="bg-white">cm <sup>2</sup></span>
-                </label>
+          <div id="card">
+            <div id="triangle-body" class="card w-full bg-base-100 border shadow-xl h-full">
+              <figure class="px-10 pt-10">
+                <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div  class="card-body items-center text-center">
+                <h2 id="triangle" class="card-title">Triangle</h2>
+                <p>Area(A)=<span id="triangle-total">0.5*b*h</span></p>
+                <div class="form-control">
+                  <label class="input-group">
+                    <input id="first-input-triangle" type="text" placeholder="b"
+                      class="border rounded px-3 bg-gray-200 w-20">
+                    <span class="bg-white">cm</span>
+                    <input id="sceond-input-triangle" type="text" placeholder="h"
+                      class="border rounded px-3 bg-gray-200 w-20">
+                    <span class="bg-white">cm</span>
+                  </label>
+  
+                </div>
+                <div class="card-actions">
+                  <button id="btn-triangle" class="btn btn-primary px-20 mt-20">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-              </div>
-              <div class="card-actions">
-                <button id="btn-triangle" class="btn btn-primary px-20 mt-20">Buy Now</button>
-              </div>
-            </div>
-          </div>
 
-
-          <div class="card w-full bg-base-100 border shadow-xl">
-            <figure class="px-10 pt-10">
-              <img src="images/rectangle.png" alt="Shoes" class="rounded-xl" />
-            </figure>
-            <div class="card-body items-center text-center">
-              <h2 id="rectangle-text" class="card-title">Rectangle</h2>
-              <p>Area(A)=<span id="triangle-total">wl</span></p>
-              <div class="form-control">
-                <label class="input-group">
-                  <input id="sceond-rectangle-input" type="text" placeholder="w"
-                    class="border rounded px-3 bg-gray-200 w-20" />
-                  <span class="bg-white">cm</span>
-                  <input id="first-rectangle-input" type="text" placeholder="l"
-                    class="border rounded px-3 bg-gray-200 w-20" />
-                  <span class="bg-white">cm</span>
-                </label>
-              </div>
-              <div class="card-actions">
-                <button id="btn-rectangle" class="btn btn-primary px-20 mt-20">Buy Now</button>
-              </div>
-            </div>
-          </div>
-          <div class="card w-full bg-base-100 border shadow-xl">
-            <figure class="px-10 pt-10">
-              <img src="images/parallelogram.png" alt="Shoes" class="rounded-xl" />
-            </figure>
-            <div class="card-body items-center text-center">
-              <h2 id="paralo-text" class="card-title">Parallelogram</h2>
-              <p>Area(A)=<span id="triangle-total">b*h</span></p>
-              <div class="form-control">
-                <label class="input-group">
-                  <input id="first-paralo-input" type="text" placeholder="b=10" class="  px-3  w-20" />
-                  <span class="bg-white">cm</span>
-                  <input id="sceond-paralo-input" type="text" placeholder="h=12" class=" px-3  w-20" />
-                  <span class="bg-white">cm</span>
-                </label>
-              </div>
-              <div class="card-actions">
-                <button id="btn-paralogram" class="btn btn-primary px-20 mt-20">Buy Now</button>
+          <div id="card-2">
+            <div id="rectangle-body" class="card w-full h-full bg-base-100 border shadow-xl">
+              <figure class="px-10 pt-10">
+                <img src="images/rectangle.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 id="rectangle-text" class="card-title">Rectangle</h2>
+                <p>Area(A)=<span id="triangle-total">wl</span></p>
+                <div class="form-control">
+                  <label class="input-group">
+                    <input id="sceond-rectangle-input" type="text" placeholder="w"
+                      class="border rounded px-3 bg-gray-200 w-20" />
+                    <span class="bg-white">cm</span>
+                    <input id="first-rectangle-input" type="text" placeholder="l"
+                      class="border rounded px-3 bg-gray-200 w-20" />
+                    <span class="bg-white">cm</span>
+                  </label>
+                </div>
+                <div class="card-actions">
+                  <button id="btn-rectangle" class="btn btn-primary px-20 mt-20">Buy Now</button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="card w-full bg-base-100 border shadow-xl">
-            <figure class="px-10 pt-10">
-              <img src="images/rhombus.png" alt="Shoes" class="rounded-xl" />
-            </figure>
-            <div class="card-body items-center text-center">
-              <h2 id="rhombus-text" class="card-title">Rhombus</h2>
-              <p>Area(A)=<span id="triangle-total">0.5*d1*d2</span></p>
-              <div class="form-control">
-                <label class="input-group">
-                  <input id="first-rhombus-input" type="text" placeholder="d1=16" class=" px-3  w-20" />
-                  <span class="bg-white">cm</span>
-                  <input id="sceond-rhombus-input" type="text" placeholder="d  =8" class=" px-3  w-20" />
-                  <span class="bg-white">cm</span>
-                </label>
-              </div>
-              <div class="card-actions">
-                <button id="btn-rhombus" class="btn btn-primary px-20 mt-20">Buy Now</button>
-              </div>
-            </div>
-          </div>
-          <div class="card w-full bg-base-100 border shadow-xl">
-            <figure class="px-10 pt-10">
-              <img src="images/pentagon.png" alt="Shoes" class="rounded-xl" />
-            </figure>
-            <div class="card-body items-center text-center">
-              <h2 id="pentagon-text" class="card-title">Pentagon</h2>
-              <p>Area(A)=<span id="triangle-total">0.5*p*b</span></p>
-              <div class="form-control">
-                <label class="input-group">
-                  <input id="first-pentagon-input" type="text" placeholder="p=6" class=" px-3  w-20" />
-                  <span class="bg-white">cm</span>
-                  <input id="sceond-pentagon-input" type="text" placeholder="b=10" class=" px-3  w-20" />
-                  <span class="bg-white">cm</span>
-                </label>
-              </div>
-              <div class="card-actions">
-                <button id="btn-pentagon" class="btn btn-primary px-20 mt-20">Buy Now</button>
+          <div id="card-3">
+            <div id="paralogram-body" class="card w-full h-full bg-base-100 border shadow-xl">
+              <figure class="px-10 pt-10">
+                <img src="images/parallelogram.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 id="paralo-text" class="card-title">Parallelogram</h2>
+                <p>Area(A)=<span id="triangle-total">b*h</span></p>
+                <div class="form-control">
+                  <label class="input-group">
+                    <input id="first-paralo-input" type="text" placeholder="b=10" class="  px-3  w-20" />
+                    <span class="bg-white">cm</span>
+                    <input id="sceond-paralo-input" type="text" placeholder="h=12" class=" px-3  w-20" />
+                    <span class="bg-white">cm</span>
+                  </label>
+                </div>
+                <div class="card-actions">
+                  <button id="btn-paralogram" class="btn btn-primary px-20 mt-20">Buy Now</button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="card w-full bg-base-100 border shadow-xl">
-            <figure class="px-10 pt-10">
-              <img src="images/ellipse.png" alt="Shoes" class="rounded-xl" />
-            </figure>
-            <div class="card-body items-center text-center">
-              <h2 id="ellipse-text" class="card-title">Ellipse</h2>
-              <p>Area(A)=<span id="triangle-total"><span>&pi;</span>ab</span></p>
-              <div class="form-control">
-                <label class="input-group">
-                  <input id="first-ellipse-input" type="text" placeholder="a=10" class=" px-3  w-20" />
-                  <span class="bg-white">cm</span>
-                  <input id="sceon-ellipse-input" type="text" placeholder="b=4" class=" px-3  w-20" />
-                  <span class="bg-white">cm</span>
-                </label>
+          <div id="card-4">
+            <div id="rhombus-body" class="card w-full h-full bg-base-100 border shadow-xl">
+              <figure class="px-10 pt-10">
+                <img src="images/rhombus.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 id="rhombus-text" class="card-title">Rhombus</h2>
+                <p>Area(A)=<span id="triangle-total">0.5*d<sub>1</sub>*d <sub>2</sub></span></p>
+                <div class="form-control">
+                  <label class="input-group">
+                    <input id="first-rhombus-input" type="text" placeholder="d1=16" class=" px-3  w-20" />
+                    <span class="bg-white">cm</span>
+                    <input id="sceond-rhombus-input" type="text" placeholder="d  =8" class=" px-3  w-20" />
+                    <span class="bg-white">cm</span>
+                  </label>
+                </div>
+                <div class="card-actions">
+                  <button id="btn-rhombus" class="btn btn-primary px-20 mt-20">Buy Now</button>
+                </div>
               </div>
-              <div class="card-actions">
-                <button id="btn-ellipse" class="btn btn-primary px-20 mt-20">Buy Now</button>
+            </div>
+          </div>
+          <div id="card-5">
+            <div id="pentagon-body" class="card w-full h-full bg-base-100 border shadow-xl">
+              <figure class="px-10 pt-10">
+                <img src="images/pentagon.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 id="pentagon-text" class="card-title">Pentagon</h2>
+                <p>Area(A)=<span id="triangle-total">0.5*p*b</span></p>
+                <div class="form-control">
+                  <label class="input-group">
+                    <input id="first-pentagon-input" type="text" placeholder="p=6" class=" px-3  w-20" />
+                    <span class="bg-white">cm</span>
+                    <input id="sceond-pentagon-input" type="text" placeholder="b=10" class=" px-3  w-20" />
+                    <span class="bg-white">cm</span>
+                  </label>
+                </div>
+                <div class="card-actions">
+                  <button id="btn-pentagon" class="btn btn-primary px-20 mt-20">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="card-6">
+            <div id="ellipse-card" class="card w-full h-full bg-base-100 border shadow-xl">
+              <figure class="px-10 pt-10">
+                <img src="images/ellipse.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 id="ellipse-text" class="card-title">Ellipse</h2>
+                <p>Area(A)=<span id="triangle-total"><span>&pi;</span>ab</span></p>
+                <div class="form-control">
+                  <label class="input-group">
+                    <input id="first-ellipse-input" type="text" placeholder="a=10" class=" px-3  w-20" />
+                    <span class="bg-white">cm</span>
+                    <input id="sceon-ellipse-input" type="text" placeholder="b=4" class=" px-3  w-20" />
+                    <span class="bg-white">cm</span>
+                  </label>
+                </div>
+                <div class="card-actions">
+                  <button id="btn-ellipse" class="btn btn-primary px-20 mt-20">Buy Now</button>
+                </div>
               </div>
             </div>
           </div>
@@ -216,6 +228,7 @@
     </main>
   </header>
   <script src="js/geometry.js"></script>
+  <script src="js/bg-random.js"></script>
 </body>
 
 </html>

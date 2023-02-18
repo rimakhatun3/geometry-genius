@@ -10,6 +10,8 @@ function getInputById(id){
 document.getElementById('nav-btn').addEventListener('click',function(){
     window.location.href ='page.html'
 })
+ 
+
 
 
 let serial = 0;
