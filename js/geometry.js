@@ -32,8 +32,6 @@ document.getElementById('btn-triangle').addEventListener('click',function(){
     const firstTriangleInput = getInputById('first-input-triangle');
     const sceondTriangleInput = getInputById('sceond-input-triangle');
     const total =  0.5*firstTriangleInput * sceondTriangleInput;
-    const triangleBody = document.getElementById('triangle-body');
-    triangleBody.style.backgroundColor = ' #faf55' + 'randomColor'
    getData(triangle,total);
   
 
