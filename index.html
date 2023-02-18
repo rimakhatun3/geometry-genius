@@ -1,207 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geometry Genius</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geometry Genius</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="navbar bg-sky-100 shadow-xl lg:px-12 mb-30 ">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </label>
-                    <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a>Item 1</a></li>
-                      <li tabindex="0">
-                        <a class="justify-between">
-                          Parent
-                          <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
-                        </a>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </li>
-                      <li><a>Item 3</a></li>
-                    </ul>
-                  </div>
-                 
-                    <p> <span class="font-bold text-3xl text-center">Interactive </span><br>  <span class="text-current text-center">Geometry Genius</span></p>
-                  
-                </div>
-                
-                <div class="navbar-end">
-                  <a class="btn bg-blue-600 px-10 hover:bg-green-400">Blog</a>
-                </div>
-              </div>
-        </nav>
-        <main>
-            <section class="flex md:flex-row lg:flex-row lg:px-12 ">
-                <div class="products-details w-full md:w-[70%] lg:w-[70%] grid md:grid-cols-2 lg:grid-cols-3 gap-3 mt-5 ">
-                    <div class="card w-full bg-base-100 border shadow-xl">
-                        <figure class="px-10 pt-10">
-                          <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
-                        </figure>
-                        <div class="card-body items-center text-center">
-                          <h2 id="triangle" class="card-title">Triangle</h2>
-                          <p>Area(A)=<span id="triangle-total">0.5*b*h</span></p>
-                          <div class="form-control">
-                            <label class="input-group">
-                                <input id="first-input-triangle" type="text" placeholder="b" class="border rounded px-3 bg-gray-200 w-20" > 
-                                <span class="bg-white">cm</span>
-                              <input id="sceond-input-triangle" type="text" placeholder="h" class="border rounded px-3 bg-gray-200 w-20" >
-                              <span class="bg-white">cm <sup>2</sup></span>
-                            </label>
-                            
-                          </div>
-                          <div class="card-actions">
-                            <button id="btn-triangle"  class="btn btn-primary px-20 mt-20">Buy Now</button>
-                          </div>
-                        </div>
-                      </div>
-                
-                
-                    <div class="card w-full bg-base-100 border shadow-xl">
-                        <figure class="px-10 pt-10">
-                          <img src="images/rectangle.png" alt="Shoes" class="rounded-xl" />
-                        </figure>
-                        <div class="card-body items-center text-center">
-                          <h2 id="rectangle-text" class="card-title">Rectangle</h2>
-                          <p>Area(A)=<span id="triangle-total">w*l</span></p>
-                          <div class="form-control">
-                            <label class="input-group">
-                                <input id="sceond-rectangle-input" type="text" placeholder="w" class="border rounded px-3 bg-gray-200 w-20" /> 
-                                <span class="bg-white">cm</span>
-                              <input id="first-rectangle-input"  type="text" placeholder="l" class="border rounded px-3 bg-gray-200 w-20" />
-                              <span class="bg-white">cm</span>
-                            </label>
-                          </div>
-                          <div class="card-actions">
-                            <button id="btn-rectangle" class="btn btn-primary px-20 mt-20">Buy Now</button>
-                          </div>
-                        </div>
-                      </div>
-                    <div class="card w-full bg-base-100 border shadow-xl">
-                        <figure class="px-10 pt-10">
-                          <img src="images/parallelogram.png" alt="Shoes" class="rounded-xl" />
-                        </figure>
-                        <div class="card-body items-center text-center">
-                          <h2 class="card-title">Parallelogram</h2>
-                          <p>Area(A)=<span id="triangle-total">b*h</span></p>
-                          <div class="form-control">
-                            <label class="input-group">
-                                <input type="text" placeholder="b=10" class="  px-3  w-20" /> 
-                                <span class="bg-white">cm</span>
-                              <input type="text" placeholder="h=10" class=" px-3  w-20" />
-                              <span class="bg-white">cm</span>
-                            </label>
-                          </div>
-                          <div class="card-actions">
-                            <button class="btn btn-primary px-20 mt-20">Buy Now</button>
-                          </div>
-                        </div>
-                      </div>
-                    <div class="card w-full bg-base-100 border shadow-xl">
-                        <figure class="px-10 pt-10">
-                          <img src="images/rhombus.png" alt="Shoes" class="rounded-xl" />
-                        </figure>
-                        <div class="card-body items-center text-center">
-                          <h2 class="card-title">Rhombus</h2>
-                          <p>Area(A)=<span id="triangle-total">0.5*d1*d2</span></p>
-                          <div class="form-control">
-                            <label class="input-group">
-                                <input type="text" placeholder="d1=16" class=" px-3  w-20" /> 
-                                <span class="bg-white">cm</span>
-                              <input type="text" placeholder="d2=B" class=" px-3  w-20" />
-                              <span class="bg-white">cm</span>
-                            </label>
-                          </div>
-                          <div class="card-actions">
-                            <button class="btn btn-primary px-20 mt-20">Buy Now</button>
-                          </div>
-                        </div>
-                </div>
-                    <div class="card w-full bg-base-100 border shadow-xl">
-                        <figure class="px-10 pt-10">
-                          <img src="images/pentagon.png" alt="Shoes" class="rounded-xl" />
-                        </figure>
-                        <div class="card-body items-center text-center">
-                          <h2 class="card-title">Pentagon</h2>
-                          <p>Area(A)=<span id="triangle-total">0.5*p*b</span></p>
-                          <div class="form-control">
-                            <label class="input-group">
-                                <input type="text" placeholder="p=6" class=" px-3  w-20" /> 
-                                <span class="bg-white">cm</span>
-                              <input type="text" placeholder="b=10" class=" px-3  w-20" />
-                              <span class="bg-white">cm</span>
-                            </label>
-                          </div>
-                          <div class="card-actions">
-                            <button class="btn btn-primary px-20 mt-20">Buy Now</button>
-                          </div>
-                        </div>
-                </div>
-                    <div class="card w-full bg-base-100 border shadow-xl">
-                        <figure class="px-10 pt-10">
-                          <img src="images/ellipse.png" alt="Shoes" class="rounded-xl" />
-                        </figure>
-                        <div class="card-body items-center text-center">
-                          <h2 class="card-title">Ellipse</h2>
-                          <p>Area(A)=<span id="triangle-total">3.14ab</span></p>
-                          <div class="form-control">
-                            <label class="input-group">
-                                <input type="text" placeholder="a=10" class=" px-3  w-20" /> 
-                                <span class="bg-white">cm</span>
-                              <input type="text" placeholder="b=4" class=" px-3  w-20" />
-                              <span class="bg-white">cm</span>
-                            </label>
-                          </div>
-                          <div class="card-actions">
-                            <button class="btn btn-primary px-20 mt-20">Buy Now</button>
-                          </div>
-                        </div>
-                </div>
-                </div>
-                
-s
-                <div class="card-details  w-full lg:w-[30%]">
-                    
-                    <div class="overflow-x-auto">
-                        <table class="table w-full">
-                
 
-                          <!-- head -->
-                          <thead>
-                            <tr>
-                              <th>Serial</th>
-                              <th>Name</th>
-                              <th>total</th>
-                              <th>Button</th>
-                             
-                           
-                          </thead>
-                          <tbody id="table-container" >
-                           
-                            <button id="convert" class="px-10 py-4 bg-blue-600 flex justify-between">Convertcm</button>
-                          </tr>
-                          </tbody>
-                         
-                        </table>
-                        
-                            
-                      </div>
-                </div>
-            </section>
-        </main>
-    </header>
-    <script src="js/geometry.js"></script>
+<body>
+  <header>
+    <nav>
+      <div class="navbar bg-sky-100 shadow-xl lg:px-12 mb-30 ">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </label>
+            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Item 1</a></li>
+              <li tabindex="0">
+                <a class="justify-between">
+                  Parent
+                  <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24">
+                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+                  </svg>
+                </a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+
+          <p> <span class="font-bold text-3xl text-center">Interactive </span><br> <span
+              class="text-current text-center">Geometry Genius</span></p>
+
+        </div>
+
+        <div class="navbar-end">
+          <a class="btn bg-blue-600 px-10 hover:bg-green-400">Blog</a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="flex md:flex-row lg:flex-row lg:px-12 ">
+        <div class="products-details w-full md:w-[70%] lg:w-[70%] grid md:grid-cols-2 lg:grid-cols-3 gap-3 mt-5 ">
+          <div class="card w-full bg-base-100 border shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 id="triangle" class="card-title">Triangle</h2>
+              <p>Area(A)=<span id="triangle-total">0.5*b*h</span></p>
+              <div class="form-control">
+                <label class="input-group">
+                  <input id="first-input-triangle" type="text" placeholder="b"
+                    class="border rounded px-3 bg-gray-200 w-20">
+                  <span class="bg-white">cm</span>
+                  <input id="sceond-input-triangle" type="text" placeholder="h"
+                    class="border rounded px-3 bg-gray-200 w-20">
+                  <span class="bg-white">cm <sup>2</sup></span>
+                </label>
+
+              </div>
+              <div class="card-actions">
+                <button id="btn-triangle" class="btn btn-primary px-20 mt-20">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card w-full bg-base-100 border shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="images/rectangle.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 id="rectangle-text" class="card-title">Rectangle</h2>
+              <p>Area(A)=<span id="triangle-total">w*l</span></p>
+              <div class="form-control">
+                <label class="input-group">
+                  <input id="sceond-rectangle-input" type="text" placeholder="w"
+                    class="border rounded px-3 bg-gray-200 w-20" />
+                  <span class="bg-white">cm</span>
+                  <input id="first-rectangle-input" type="text" placeholder="l"
+                    class="border rounded px-3 bg-gray-200 w-20" />
+                  <span class="bg-white">cm</span>
+                </label>
+              </div>
+              <div class="card-actions">
+                <button id="btn-rectangle" class="btn btn-primary px-20 mt-20">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card w-full bg-base-100 border shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="images/parallelogram.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 id="paralo-text" class="card-title">Parallelogram</h2>
+              <p>Area(A)=<span id="triangle-total">b*h</span></p>
+              <div class="form-control">
+                <label class="input-group">
+                  <input id="first-paralo-input" type="text" placeholder="b=10" class="  px-3  w-20" />
+                  <span class="bg-white">cm</span>
+                  <input id="sceond-paralo-input" type="text" placeholder="h=12" class=" px-3  w-20" />
+                  <span class="bg-white">cm</span>
+                </label>
+              </div>
+              <div class="card-actions">
+                <button id="btn-paralogram" class="btn btn-primary px-20 mt-20">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card w-full bg-base-100 border shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="images/rhombus.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 id="rhombus-text" class="card-title">Rhombus</h2>
+              <p>Area(A)=<span id="triangle-total">0.5*d1*d2</span></p>
+              <div class="form-control">
+                <label class="input-group">
+                  <input id="first-rhombus-input" type="text" placeholder="d1=16" class=" px-3  w-20" />
+                  <span class="bg-white">cm</span>
+                  <input id="sceond-rhombus-input" type="text" placeholder="d2=8" class=" px-3  w-20" />
+                  <span class="bg-white">cm</span>
+                </label>
+              </div>
+              <div class="card-actions">
+                <button id="btn-rhombus" class="btn btn-primary px-20 mt-20">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card w-full bg-base-100 border shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="images/pentagon.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 id="pentagon-text" class="card-title">Pentagon</h2>
+              <p>Area(A)=<span id="triangle-total">0.5*p*b</span></p>
+              <div class="form-control">
+                <label class="input-group">
+                  <input id="first-pentagon-input" type="text" placeholder="p=6" class=" px-3  w-20" />
+                  <span class="bg-white">cm</span>
+                  <input id="sceond-pentagon-input" type="text" placeholder="b=10" class=" px-3  w-20" />
+                  <span class="bg-white">cm</span>
+                </label>
+              </div>
+              <div class="card-actions">
+                <button id="btn-pentagon" class="btn btn-primary px-20 mt-20">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card w-full bg-base-100 border shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="images/ellipse.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 id="ellipse-text" class="card-title">Ellipse</h2>
+              <p>Area(A)=<span id="triangle-total">3.14ab</span></p>
+              <div class="form-control">
+                <label class="input-group">
+                  <input id="first-ellipse-input" type="text" placeholder="a=10" class=" px-3  w-20" />
+                  <span class="bg-white">cm</span>
+                  <input id="sceon-ellipse-input" type="text" placeholder="b=4" class=" px-3  w-20" />
+                  <span class="bg-white">cm</span>
+                </label>
+              </div>
+              <div class="card-actions">
+                <button class="btn btn-primary px-20 mt-20">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        s
+        <div class="card-details  w-full lg:w-[30%]">
+
+          <div class="overflow-x-auto">
+            <table class="table w-full">
+
+
+              <!-- head -->
+              <thead>
+                <tr>
+                  <th>Serial</th>
+                  <th>Name</th>
+                  <th>total</th>
+                  <th>Button</th>
+
+
+              </thead>
+              <tbody id="table-container">
+
+
+                </tr>
+              </tbody>
+
+            </table>
+
+
+          </div>
+        </div>
+      </section>
+    </main>
+  </header>
+  <script src="js/geometry.js"></script>
 </body>
+
 </html>
